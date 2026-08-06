@@ -89,5 +89,40 @@
     "url": "https://github.com/WonderfulClaire/watch-guide",
     "desc": "机械/石英/智能表区别 + 复杂功能 + 选购避坑（教学仓库）",
     "status": "active"
+  },
+  {
+    "name": "茶 · 品鉴与冲泡 tea",
+    "icon": "🍵",
+    "url": "https://wonderfulclaire.github.io/tea/tea.html",
+    "desc": "六大茶类 + 代表谱系 + 冲泡参数 + 互动冲泡计算器",
+    "status": "active"
+  },
+  {
+    "name": "电影 · 怎么看明白 films",
+    "icon": "🎬",
+    "url": "https://wonderfulclaire.github.io/films/films.html",
+    "desc": "类型谱系 + 必看片单 + 视听语言入门 + 互动匹配器",
+    "status": "active"
+  },
+  {
+    "name": "鞋 · 选穿养 shoes",
+    "icon": "👟",
+    "url": "https://wonderfulclaire.github.io/shoes/shoes.html",
+    "desc": "场景选鞋 + 鞋型图谱 + 尺码换算 + 保养（互动工具）",
+    "status": "active"
+  },
+  {
+    "name": "围棋 · 规则与死活 go",
+    "icon": "⚫",
+    "url": "https://wonderfulclaire.github.io/go/go.html",
+    "desc": "规则骨架 + 术语 + 入门路径 + 9 路互动棋盘（算气/提子）",
+    "status": "active"
+  },
+  {
+    "name": "滑雪 · 雪道到刹车 skiing",
+    "icon": "🎿",
+    "url": "https://wonderfulclaire.github.io/skiing/skiing.html",
+    "desc": "雪道等级 + 装备清单 + 新手动作 + FIS 安全（互动速查）",
+    "status": "active"
   }
 ]

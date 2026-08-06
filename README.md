@@ -19,7 +19,7 @@
 
 ## 已联动的学习站与教学仓库
 
-实时目录来自 [`sites.json`](sites.json)（共 13 个）。其中带 `github.io` 的是可交互学习站，带 `github.com` 的是教学仓库（README 直接在 GitHub 阅读）。
+实时目录来自 [`sites.json`](sites.json)（共 18 个）。其中带 `github.io` 的是可交互学习站/教学页，带 `github.com` 的是纯 README 教学仓库。
 
 | 站点 | 地址 | 类型 | 说明 |
 |------|------|------|------|
@@ -29,6 +29,11 @@
 | 🏊 游泳训练分析 swim-coach | https://wonderfulclaire.github.io/swim-coach/ | 学习站 | Apple Watch 数据 → 计划 + 分析 |
 | 🎹 钢琴音乐学习 | https://wonderfulclaire.github.io/music-learn/piano/index.html | 学习站 | 识谱 / 乐理 / 大调 / 技巧 |
 | 📐 智能穿戴数学基础 | https://wonderfulclaire.github.io/smart-wearable-math-foundations/ | 学习站 | AI Infra 数学地基（VitePress） |
+| 🍵 茶 · 品鉴与冲泡 | https://wonderfulclaire.github.io/tea/tea.html | 教学页 | 六大茶类 + 冲泡参数 + 计算器 |
+| 🎬 电影 · 怎么看明白 | https://wonderfulclaire.github.io/films/films.html | 教学页 | 类型谱系 + 必看片单 + 匹配器 |
+| 👟 鞋 · 选穿养 | https://wonderfulclaire.github.io/shoes/shoes.html | 教学页 | 场景选鞋 + 尺码换算 + 保养 |
+| ⚫ 围棋 · 规则与死活 | https://wonderfulclaire.github.io/go/go.html | 教学页 | 规则 + 术语 + 9 路互动棋盘 |
+| 🎿 滑雪 · 雪道到刹车 | https://wonderfulclaire.github.io/skiing/skiing.html | 教学页 | 雪道等级 + 装备 + 安全速查 |
 | 🇨🇳 理解中国社会 | https://github.com/WonderfulClaire/understanding-chinese-society | 教学仓库 | 8 维度认知地图（带数据来源） |
 | 📈 百位创业者史 | https://github.com/WonderfulClaire/history-entrepreneurs-100 | 教学仓库 | 100 位创业者索引 + 收录原则 |
 | 🌸 香水选购 | https://github.com/WonderfulClaire/perfume-selector | 教学仓库 | 10 香调家族 × 3 档价位选香树 |
