@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🧭 学习站中枢 · 我的 GitHub 学习宇宙</title>
+<style>
+  :root{
+    --bg:#0b0e17; --card:#141a2b; --ink:#e6e9f2; --sub:#9aa3bd; --line:#26304d;
+    --accent:#7aa2ff; --accent2:#9d7bff; --good:#3ad29f;
+    --shadow:0 4px 24px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    background:radial-gradient(1200px 600px at 70% -10%,#1b2540 0%,var(--bg) 55%);color:var(--ink);line-height:1.6;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px 80px;}
+  header{padding:54px 0 26px;text-align:center;}
+  header h1{margin:0;font-size:32px;font-weight:800;letter-spacing:.5px;}
+  header p{margin:10px auto 0;max-width:640px;color:var(--sub);font-size:15px;}
+  .badge{display:inline-block;margin-top:14px;padding:5px 14px;border:1px solid var(--line);border-radius:999px;
+    font-size:12.5px;color:var(--accent);background:rgba(122,162,255,.08);}
+  section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:18px 0;box-shadow:var(--shadow);}
+  section h2{margin:0 0 12px;font-size:19px;font-weight:800;}
+  section h2 .em{color:var(--accent);}
+  .concept p{color:var(--sub);font-size:14px;margin:8px 0;}
+  .concept code{background:#0b0e17;padding:2px 7px;border-radius:6px;color:var(--good);font-size:13px;}
+  .arch{display:flex;justify-content:center;padding:8px 0 4px;}
+  .arch svg{max-width:100%;height:auto;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:6px;}
+  .site{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:18px 18px;transition:.18s;position:relative;overflow:hidden;}
+  .site:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 28px rgba(122,162,255,.18);}
+  .site .top{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+  .site .ico{font-size:24px;}
+  .site .nm{font-size:16.5px;font-weight:800;}
+  .site .ds{color:var(--sub);font-size:13px;margin:0;}
+  .site .st{position:absolute;top:14px;right:14px;font-size:11px;color:var(--good);
+    border:1px solid rgba(58,210,159,.4);border-radius:999px;padding:1px 8px;background:rgba(58,210,159,.08);}
+  footer{text-align:center;color:var(--sub);font-size:12.5px;margin-top:30px;}
+  .loading{color:var(--sub);text-align:center;padding:30px;font-size:14px;}
+  .err{color:#ff8a8a;text-align:center;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🧭 学习站中枢</h1>
+    <p>把我在 GitHub 上零散的学习站，用「一套后端、多端打通」的思路串成一个学习宇宙。灵感来自秒哒（妙搭）的「共享后端」——只不过这里后端是一份 <code>sites.json</code>，前端是各个静态站。</p>
+    <span class="badge">共享后端：claire-learning-hub / sites.json · 经 jsDelivr 免费分发</span>
+  </header>
+
+  <section class="concept">
+    <h2>这套<span class="em">联动</span>是怎么搭的</h2>
+    <p>① <b>共享后端</b>：本仓库的 <code>sites.json</code> 是所有站点的唯一数据源（名字 / 链接 / 简介 / 状态）。</p>
+    <p>② <b>多端协同</b>：每个学习站注入一段几百字节的导航脚本，运行时从 jsDelivr 拉取 <code>sites.json</code>，在顶部渲染「📚 我的学习站」联动条。</p>
+    <p>③ <b>实时同步</b>：改一次 <code>sites.json</code>，所有站的导航条下一次加载就更新——和文章里「小程序下单 → PC 后台实时看到」是同一个逻辑，只是把"订单数据"换成了"站点目录"。</p>
+    <p>④ <b>零成本</b>：GitHub Pages（免费静态托管）+ jsDelivr（免费 CDN）+ 纯前端 fetch，不依赖任何付费服务或后端服务器。</p>
+  </section>
+
+  <section>
+    <h2>架构示意</h2>
+    <div class="arch">
+      <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,sans-serif">
+        <defs>
+          <linearGradient id="db" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7aa2ff"/><stop offset="1" stop-color="#9d7bff"/>
+          </linearGradient>
+        </defs>
+        <rect x="270" y="80" width="140" height="60" rx="12" fill="url(#db)"/>
+        <text x="340" y="105" text-anchor="middle" fill="#0b0e17" font-size="13" font-weight="800">sites.json</text>
+        <text x="340" y="124" text-anchor="middle" fill="#0b0e17" font-size="10.5">共享后端</text>
+        <g stroke="#46527e" stroke-width="1.6">
+          <line x1="270" y1="110" x2="120" y2="40"/>
+          <line x1="270" y1="110" x2="120" y2="110"/>
+          <line x1="270" y1="110" x2="120" y2="180"/>
+          <line x1="410" y1="110" x2="560" y2="40"/>
+          <line x1="410" y1="110" x2="560" y2="110"/>
+          <line x1="410" y1="110" x2="560" y2="180"/>
+        </g>
+        <g font-size="11.5" fill="#cdd3e6" text-anchor="middle">
+          <rect x="40" y="22" width="80" height="36" rx="9" fill="#141a2b" stroke="#26304d"/>
+          <text x="80" y="45">🏸 羽毛球</text>
+          <rect x="40" y="92" width="80" height="36" rx="9" fill="#141a2b" stroke="#26304d"/>
+          <text x="80" y="115">🏊 游泳</text>
+          <rect x="40" y="162" width="80" height="36" rx="9" fill="#141a2b" stroke="#26304d"/>
+          <text x="80" y="185">📝 托福</text>
+          <rect x="560" y="22" width="80" height="36" rx="9" fill="#141a2b" stroke="#26304d"/>
+          <text x="600" y="45">📐 数学</text>
+          <rect x="560" y="92" width="80" height="36" rx="9" fill="#141a2b" stroke="#26304d"/>
+          <text x="600" y="115">🎹 钢琴</text>
+          <rect x="560" y="162" width="80" height="36" rx="9" fill="#141a2b" stroke="#26304d"/>
+          <text x="600" y="185">🧭 中枢</text>
+        </g>
+        <text x="200" y="200" fill="#9aa3bd" font-size="10.5">每个前端 fetch sites.json → 顶部联动条</text>
+      </svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>我的学习站 <span class="em">（来自共享后端）</span></h2>
+    <div class="grid" id="cards"><div class="loading">正在从共享后端加载站点目录…</div></div>
+  </section>
+
+  <footer>
+    由 GitHub Pages + jsDelivr 免费驱动 · 任意站点改 <code>sites.json</code> 即全站同步 · © WonderfulClaire
+  </footer>
+</div>
+
+<script>
+  var CARDS = document.getElementById('cards');
+  fetch('./sites.json')
+    .then(function(r){ return r.ok ? r.json() : Promise.reject('http '+r.status); })
+    .then(function(sites){
+      CARDS.innerHTML = '';
+      sites.forEach(function(s){
+        var a = document.createElement('a');
+        a.className = 'site'; a.href = s.url || '#';
+        a.innerHTML =
+          '<span class="st">'+(s.status||'active')+'</span>' +
+          '<div class="top"><span class="ico">'+(s.icon||'•')+'</span>' +
+          '<span class="nm">'+s.name+'</span></div>' +
+          '<p class="ds">'+(s.desc||'')+'</p>';
+        CARDS.appendChild(a);
+      });
+    })
+    .catch(function(e){
+      CARDS.innerHTML = '<div class="err">共享后端加载失败：'+e+'</div>';
+    });
+</script>
+</body>
+</html>
