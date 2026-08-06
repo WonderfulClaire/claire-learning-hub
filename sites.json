@@ -3,7 +3,21 @@
     "name": "学习站中枢 Hub",
     "icon": "🧭",
     "url": "https://wonderfulclaire.github.io/claire-learning-hub/",
-    "desc": "所有学习站的共享入口与状态板（本页）",
+    "desc": "所有学习站与教学仓库的共享入口与状态板（本页）",
+    "status": "active"
+  },
+  {
+    "name": "交互式机器学习 ml-interactive",
+    "icon": "🤖",
+    "url": "https://wonderfulclaire.github.io/ml-interactive/ml.html",
+    "desc": "分层课程 + 5 个可动手 lab（线性回归/精确率召回率/梯度下降/感知机/Transformer）",
+    "status": "active"
+  },
+  {
+    "name": "托福写作范文",
+    "icon": "📝",
+    "url": "https://wonderfulclaire.github.io/toefl-learn/",
+    "desc": "综合写作 + 学术讨论范文 + 评分指南（11 篇范文）",
     "status": "active"
   },
   {
@@ -21,10 +35,10 @@
     "status": "active"
   },
   {
-    "name": "托福写作范文",
-    "icon": "📝",
-    "url": "https://wonderfulclaire.github.io/toefl-learn/",
-    "desc": "综合写作 + 学术讨论范文 + 评分指南（11 篇范文）",
+    "name": "钢琴音乐学习",
+    "icon": "🎹",
+    "url": "https://wonderfulclaire.github.io/music-learn/piano/index.html",
+    "desc": "识谱 / 乐理 / 大调辨别 / 弹琴技巧（交互站）",
     "status": "active"
   },
   {
@@ -35,10 +49,45 @@
     "status": "active"
   },
   {
-    "name": "钢琴音乐学习",
-    "icon": "🎹",
-    "url": "https://wonderfulclaire.github.io/music-learn/piano/index.html",
-    "desc": "识谱 / 乐理 / 大调辨别 / 弹琴技巧（交互站）",
+    "name": "理解中国社会",
+    "icon": "🇨🇳",
+    "url": "https://github.com/WonderfulClaire/understanding-chinese-society",
+    "desc": "8 维度认知地图：人口 / 地域 / 经济 / 家庭 / 教育 / 日常 / 文化 / 心态（带数据来源）",
+    "status": "active"
+  },
+  {
+    "name": "百位创业者史 history-entrepreneurs-100",
+    "icon": "📈",
+    "url": "https://github.com/WonderfulClaire/history-entrepreneurs-100",
+    "desc": "100 位中外创业者传记索引 + 9 段模板 + 收录原则（结构化史料）",
+    "status": "active"
+  },
+  {
+    "name": "香水选购 perfume-selector",
+    "icon": "🌸",
+    "url": "https://github.com/WonderfulClaire/perfume-selector",
+    "desc": "10 香调家族 × 3 档价位 × 场景的选香决策树（教学仓库）",
+    "status": "active"
+  },
+  {
+    "name": "咖啡品鉴 coffee-selector",
+    "icon": "☕",
+    "url": "https://github.com/WonderfulClaire/coffee-selector",
+    "desc": "16 款咖啡谱系 + 风味轮 + 冲煮参数（教学仓库）",
+    "status": "active"
+  },
+  {
+    "name": "穿搭风格 style-finder",
+    "icon": "👗",
+    "url": "https://github.com/WonderfulClaire/style-finder",
+    "desc": "8 类风格速查 + 体型/场合搭配公式（教学仓库）",
+    "status": "active"
+  },
+  {
+    "name": "腕表入门 watch-guide",
+    "icon": "⌚",
+    "url": "https://github.com/WonderfulClaire/watch-guide",
+    "desc": "机械/石英/智能表区别 + 复杂功能 + 选购避坑（教学仓库）",
     "status": "active"
   }
 ]
