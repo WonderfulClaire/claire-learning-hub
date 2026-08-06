@@ -1,0 +1,44 @@
+[
+  {
+    "name": "学习站中枢 Hub",
+    "icon": "🧭",
+    "url": "https://wonderfulclaire.github.io/claire-learning-hub/",
+    "desc": "所有学习站的共享入口与状态板（本页）",
+    "status": "active"
+  },
+  {
+    "name": "羽毛球系统学习站",
+    "icon": "🏸",
+    "url": "https://wonderfulclaire.github.io/badminton-court-lab/index.html",
+    "desc": "动作技巧 + 19 球路战术 + 双打轮转 + 俯瞰图绘制",
+    "status": "active"
+  },
+  {
+    "name": "游泳训练分析 swim-coach",
+    "icon": "🏊",
+    "url": "https://wonderfulclaire.github.io/swim-coach/",
+    "desc": "Apple Watch 数据 → 表现分析 + 4 周训练计划 + 53 资源",
+    "status": "active"
+  },
+  {
+    "name": "托福写作范文",
+    "icon": "📝",
+    "url": "https://wonderfulclaire.github.io/toefl-learn/",
+    "desc": "综合写作 + 学术讨论范文 + 评分指南（11 篇范文）",
+    "status": "active"
+  },
+  {
+    "name": "智能穿戴数学基础",
+    "icon": "📐",
+    "url": "https://wonderfulclaire.github.io/smart-wearable-math-foundations/",
+    "desc": "AI Infra 数学地基：矩阵分析 / 随机过程 / 凸优化 / 统计（VitePress）",
+    "status": "active"
+  },
+  {
+    "name": "钢琴音乐学习",
+    "icon": "🎹",
+    "url": "https://wonderfulclaire.github.io/music-learn/piano/index.html",
+    "desc": "识谱 / 乐理 / 大调辨别 / 弹琴技巧（交互站）",
+    "status": "active"
+  }
+]
